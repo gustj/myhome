@@ -1,0 +1,15 @@
+<h1> (new)글쓰기 페이지입니다!<br></h1>
+
+<div clss="container">
+    <form action="{% url 'create' %}">
+        <h4>제목: </h4>
+        <input type="text" name="title">
+        <h4>작성자: </h4>
+        <input type="text" name="author">
+        <br><br>
+        <h4>본문: </h4>
+        <textarea cols=40 rows=10 name="body"></textarea>
+        <br><br>
+        <input class="btn btn-dark" type="submit" value="제출하기">
+    </form>
+</div>
